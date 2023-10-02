@@ -39,7 +39,7 @@ const analyzer = {
 
     // Si no hay palabras, retorna 0
     if (words.length === 0) {
-        return 0;
+    return 0;
     }
 
     // Calcula la longitud total de las palabras

@@ -38,11 +38,7 @@ Proporciona una interfaz de usuario intuitiva para ingresar texto y obtener esta
 Si no deseas clonar el repositorio y simplemente quieres probar la aplicación en línea, puedes acceder a la versión desplegada en GitHub Pages.
 
 [**Analizador de Texto en GitHub Pages**](https://tamaracontreras.github.io/DEV012-text-analyzer/)
-
 Esto te permitirá acceder y utilizar la aplicación directamente en tu navegador sin necesidad de clonar el repositorio localmente.
-
-
-
 ## Capturas de Pantalla
 
 ![Captura de Pantalla 1](screenshots/app01.jpg)
@@ -54,7 +50,7 @@ Esto te permitirá acceder y utilizar la aplicación directamente en tu navegado
 Si deseas contribuir a este proyecto, sigue estos pasos:
 
 1. Haz un fork del repositorio.
-2. Crea una rama para tu función: `git checkout -b nueva-funcion`.
+        2. Crea una rama para tu función: `git checkout -b nueva-funcion`.
 3. Realiza tus cambios y haz commit: `git commit -m 'Agrega nueva función'`.
 4. Sube tus cambios: `git push origin nueva-funcion`.
 5. Abre un pull request en GitHub.
