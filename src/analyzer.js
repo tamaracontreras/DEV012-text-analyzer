@@ -37,7 +37,6 @@ const analyzer = {
     // Divide el texto en palabras
     const words = text.split(/\s+/).filter(word => word.length > 0);
 
-    // Si no hay palabras, retorna 0
     if (words.length === 0) {
     return 0;
     }
