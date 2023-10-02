@@ -38,7 +38,7 @@ const analyzer = {
     const words = text.split(/\s+/).filter(word => word.length > 0);
 
     if (words.length === 0) {
-    return 0;
+      return 0;
     }
 
     // Calcula la longitud total de las palabras
@@ -49,8 +49,7 @@ const analyzer = {
     const roundedAverage = parseFloat(average.toFixed(2));
 
     return roundedAverage;
-},
-
+  },
 
   getNumberCount: (text) => {
     // Utiliza una expresión regular para encontrar números (pueden incluir decimales)
@@ -60,30 +59,26 @@ const analyzer = {
     return numbers ? numbers.length : 0;
   },
 
-  
   getNumberSum: (text) => {
-        // Verifica si no hay palabras ni números ingresados
+    // Verifica si no hay palabras ni números ingresados
     if (!/\d/.test(text)) {
-    return 0;
-  }
-
-        // Utiliza una expresión regular para encontrar números (pueden incluir decimales)
-  const numbers = text.match(/[-+]?\b\d+(\.\d+)?\b/g);
-
-        // Si no se encuentran números, retorna 0
-  if (!numbers) {
-    return 0;
-  }
-
-        // Filtra los números válidos y realiza la suma
-  const validNumbers = numbers.filter(num => !isNaN(parseFloat(num)));
-  const sum = validNumbers.reduce((acc, num) => acc + parseFloat(num), 0);
-
-   return sum;
+      return 0;
     }
 
+    // Utiliza una expresión regular para encontrar números (pueden incluir decimales)
+    const numbers = text.match(/[-+]?\b\d+(\.\d+)?\b/g);
 
+    // Si no se encuentran números, retorna 0
+    if (!numbers) {
+      return 0;
+    }
 
+    // Filtra los números válidos y realiza la suma
+    const validNumbers = numbers.filter(num => !isNaN(parseFloat(num)));
+    const sum = validNumbers.reduce((acc, num) => acc + parseFloat(num), 0);
+
+    return sum;
+  },
 };
 
 export default analyzer;
