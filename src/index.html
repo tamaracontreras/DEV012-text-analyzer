@@ -3,11 +3,39 @@
 
 <head>
   <meta charset="utf-8">
+
+  
+  
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div id="container">
+
+  <header>
+    <h1> Analizador de Texto</h1>
+
+  </header>
+    <ul>
+      <li class="metricas" data-testid="character-count">Caracteres</li> 
+      <li class="metricas" data-testid="character-no-spaces-count">Caracteres Sin Espacios</li>
+      <li class="metricas" data-testid="word-count">Palabras</li>
+      <li class="metricas" data-testid="number-count">Números</li>
+      <li class="metricas" data-testid="number-sum"> Suma Números</li>
+      <li class="metricas" data-testid="word-length-average">Promedio Longitud</li>
+    </ul>
+    <textarea name="user-input" placeholder="Escribe aquí..."></textarea>
+    <br>
+    <button id="reset-button">Limpiar Métricas</button>
+    <footer data-testid="footer-container">
+      <p>Tam 2023</p>
+    </footer>
+  </div>
+  
+
+  
+
   <script src="index.js" type="module"></script>
 </body>
 </html>
