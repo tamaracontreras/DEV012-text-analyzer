@@ -1,0 +1,222 @@
+
+
+header
+{
+font-family: monospace, serif;
+
+text-align: center;
+color:#ffffff
+}
+body {
+  margin: 0;
+  overflow: hidden; /* Evitar barras de desplazamiento */
+}
+
+
+
+h1 {
+  margin-top: 5px;
+  font-size: 71px;
+  color: #edceeb;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 0px 0px 0 rgb(225,194,223),
+               1px -1px 0 rgb(212,181,210),
+               2px -2px 0 rgb(200,169,198),
+               3px -3px 0 rgb(188,157,186),
+               4px -4px 0 rgb(175,144,173),
+               5px -5px 0 rgb(163,132,161),
+               6px -6px  0 rgb(151,120,149),
+               7px -7px 6px rgba(0,0,0,0.57),
+               7px -7px 1px rgba(0,0,0,0.5),
+               0px 0px 6px rgba(0,0,0,.2);
+
+  /* Agrega la animación */
+  animation: bounce 1s ease-in-out 1; /* 1 indica que la animación se ejecutará solo una vez */
+
+  /* Mantén el estado final de la animación después de que termine */
+  transform-origin: bottom;
+
+  /* Pausa la animación */
+ 
+
+  /* Utiliza JavaScript para iniciar la animación al cargar la página */
+  /* Asegúrate de que el valor sea mayor que 0 para evitar problemas en algunos navegadores */
+}
+
+/* Agrega la definición de la animación */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+body{
+    font-family: monospace, sans-serif;
+    font-size: 13px;
+    color:#c5c5c5;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+#container{
+  margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 500px;
+    background-color: #F4F7FA;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+   
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 10px;
+    justify-content:center;
+
+  }
+   .metricas {
+    width: 180px;
+    height: 20px;
+    padding: 5px;
+    margin: 5px;
+    
+    box-shadow: 0px 0px 0px rgb(225,194,223),
+    1px -1px 0 rgb(212,181,210),
+    2px -2px 0 rgb(200,169,198),
+    3px -3px 0 rgb(188,157,186),
+    4px -4px 0 rgb(175,144,173),
+    5px -5px 0 rgb(163,132,161),
+    6px -6px  0 rgb(151,120,149),
+    7px -7px 6px rgba(0,0,0,0.57),
+    7px -7px 1px rgba(0,0,0,0.5);
+    border: 3px solid #f2cbcb;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: rgb(134, 131, 131);
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+   
+  }
+  
+
+
+
+textarea[name="user-input"]{
+  
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-left: 50px;
+ height: 100px;
+ width: 750px;
+ border-color: #c5c5c5;
+ border-radius: 15px;
+ padding: 15px;
+ background-color: #e8e8e8;
+ font-size: 25px;
+ resize: none;
+ outline: none;
+ font-family: monospace, serif;
+ color: rgb(134, 131, 131);/* Color del texto en formato hexadecimal */
+border: dashed;
+ transition: border-color 0.3s ease-in-out;
+
+}
+textarea[name="user-input"]:hover {
+  border-color: #f1e8b5;
+  border-width: 3px; 
+}
+textarea[name="user-input"]::placeholder {
+  color: #999; /* Color del placeholder */
+  font-style: italic; /* Estilo del placeholder */
+}
+
+#reset-button {
+  /* Estilo 3D para el botón */
+  height: 40px;
+  width: 160px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: none;
+  color:rgb(134, 131, 131);
+  box-shadow: 0px 0px 0 rgb(225,194,223),
+  1px -1px 0 rgb(212,181,210),
+  2px -2px 0 rgb(200,169,198),
+  3px -3px 0 rgb(188,157,186),
+  4px -4px 0 rgb(175,144,173),
+  5px -5px 0 rgb(163,132,161),
+  6px -6px  0 rgb(151,120,149),
+  7px -7px 6px rgba(0,0,0,0.57),
+  7px -7px 1px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease-in-out;
+  border: none;
+  margin: 0 auto; /* Esto centra horizontalmente el botón dentro de su contenedor */
+}
+button:active {
+  transform: translateY(3px);}
+/* Efecto de elevación al pasar el mouse */
+
+
+footer[data-testid="footer-container"]
+ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ /* Establece la altura al 100% del viewport */
+}
+
+footer {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 1);
+  
+  width: 880px;
+  height: 20px;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(0); /* Centra horizontalmente y mantiene translateY */
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+footer p {
+text-align: center;
+font-family: 'Josefin Sans', sans-serif;
+font-size: 20px;
+padding: 10px 10px;
+text-align: center;
+color:#e7a3a3
+}
+
