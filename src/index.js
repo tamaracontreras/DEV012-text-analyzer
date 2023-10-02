@@ -10,7 +10,7 @@ function updateResults() {
   const charCount = analyzer.getCharacterCount(textInput);
   const wordCount = analyzer.getWordCount(textInput);
   const charCountExcludingSpaces = analyzer.getCharacterCountExcludingSpaces(textInput);
-  const averageWordLength= analyzer.getWordLengthAverage(textInput);
+  const averageWordLength= analyzer.getAverageWordLength(textInput);
   const numberCount = analyzer.getNumberCount(textInput);
   const numberSum = analyzer.getNumberSum(textInput);
 
@@ -20,7 +20,7 @@ function updateResults() {
   document.querySelector('li[data-testid="word-count"]').textContent = `Palabras: ${wordCount}`;
   document.querySelector('li[data-testid="number-count"]').textContent = `Números: ${numberCount}`;
   document.querySelector('li[data-testid="number-sum"]').textContent = `Suma Números: ${numberSum}`;
-  document.querySelector('li[data-testid="word-length-average"]').textContent = `Promedio de Longitud: ${averageWordLength}`;
+  document.querySelector('li[data-testid="get-average-word-length"]').textContent = `Promedio de Longitud: ${averageWordLength}`;
 }
 
 function resetMetrics() {

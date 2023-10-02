@@ -33,52 +33,63 @@ const analyzer = {
     return textWithoutSpacesCommasDots.length;
   },
 
-  getWordLengthAverage: (text) => {
+  getAverageWordLength: (text) => {
     // Divide el texto en palabras
     const words = text.split(/\s+/).filter(word => word.length > 0);
+
 
     if (words.length === 0) {
       return 0;
     }
 
+
     // Calcula la longitud total de las palabras
     const totalWordLength = words.reduce((acc, word) => acc + word.length, 0);
+
 
     // Calcula el promedio y redondea a dos decimales
     const average = totalWordLength / words.length;
     const roundedAverage = parseFloat(average.toFixed(2));
 
+
     return roundedAverage;
   },
+
 
   getNumberCount: (text) => {
     // Utiliza una expresión regular para encontrar números (pueden incluir decimales)
     const numbers = text.match(/[-+]?\b\d+(\.\d+)?\b/g);
 
+
     // Retorna la cantidad de números encontrados o 0 si no se encontraron números
     return numbers ? numbers.length : 0;
   },
 
+  
   getNumberSum: (text) => {
-    // Verifica si no hay palabras ni números ingresados
-    if (!/\d/.test(text)) {
-      return 0;
+  // Verifica si no hay palabras ni números ingresados
+      if (!/\d/.test(text)) {
+        return 0;
     }
 
-    // Utiliza una expresión regular para encontrar números (pueden incluir decimales)
+
+  // Utiliza una expresión regular para encontrar números (pueden incluir decimales)
     const numbers = text.match(/[-+]?\b\d+(\.\d+)?\b/g);
 
-    // Si no se encuentran números, retorna 0
-    if (!numbers) {
-      return 0;
-    }
 
-    // Filtra los números válidos y realiza la suma
-    const validNumbers = numbers.filter(num => !isNaN(parseFloat(num)));
-    const sum = validNumbers.reduce((acc, num) => acc + parseFloat(num), 0);
+  // Si no se encuentran números, retorna 0
+  if (!numbers) {
+    return 0;
+  }
+
+
+  // Filtra los números válidos y realiza la suma
+  const validNumbers = numbers.filter(num => !isNaN(parseFloat(num)));
+  const sum = validNumbers.reduce((acc, num) => acc + parseFloat(num), 0);
 
     return sum;
-  },
+},
 };
+
 
 export default analyzer;
