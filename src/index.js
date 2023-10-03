@@ -20,7 +20,7 @@ function updateResults() {
   document.querySelector('li[data-testid="word-count"]').textContent = `Palabras: ${wordCount}`;
   document.querySelector('li[data-testid="number-count"]').textContent = `Números: ${numberCount}`;
   document.querySelector('li[data-testid="number-sum"]').textContent = `Suma Números: ${numberSum}`;
-  document.querySelector('li[data-testid="get-average-word-length"]').textContent = `Promedio de Longitud: ${averageWordLength}`;
+  document.querySelector('li[data-testid="word-length-average"]').textContent = `Promedio de Longitud: ${averageWordLength}`;
 }
 
 function resetMetrics() {
